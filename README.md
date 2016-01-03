@@ -4,7 +4,7 @@ CCTV Software for window and linux
 
 (Currently can't save video stream. Work in progress.)
 
-![GitHub Logo](https://github.com/rastabaddon/QCCTV/raw/master/Docs/Img/qcctv.png)
+![Preview](https://raw.githubusercontent.com/rastabaddon/QCCTV/master/Docs/img/qcctv.png)
 
 #Requirements
   * Windows/Linux
@@ -29,6 +29,6 @@ CCTV Software for window and linux
   should works with any (JPG/MJPG IP Camera)
 
 
-![GitHub Logo](https://www.gnu.org/graphics/lgplv3-147x51.png)
+![LGPL](https://www.gnu.org/graphics/lgplv3-147x51.png)
 Licence: https://www.gnu.org/licenses/lgpl.html    
     
