@@ -26,9 +26,16 @@ CCTV Software for window and linux
   * Tenvis IP602W
   * Tenvis JPT3815W
   
-  should works with any (JPG/MJPG IP Camera)
+  should works with any JPG/MJPG IP Camera.
 
+#TODO
 
+  * Support more camera (rtsp client, h264)
+  * Save video stream as h264 video file	
+  * Add rtsp server for stream video
+  * Create android/iphone app
+
+#Licence
 ![LGPL](https://www.gnu.org/graphics/lgplv3-147x51.png)
-Licence: https://www.gnu.org/licenses/lgpl.html    
+https://www.gnu.org/licenses/lgpl.html    
     
