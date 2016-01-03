@@ -1,0 +1,7 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/bin/Debug/QCCTV-USB-Driver.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/bin/Debug/QCCTV-USB-Driver.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/obj/Debug/QCCTV-USB-Driver.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/obj/Debug/QCCTV-USB-Driver.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/bin/Debug/QCCTV-Defs.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-USB-Driver/bin/Debug/QCCTV-Defs.dll.mdb

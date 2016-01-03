@@ -1,0 +1,5 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Defs/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Defs/bin/Debug/QCCTV-Defs.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Defs/bin/Debug/QCCTV-Defs.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Defs/obj/Debug/QCCTV-Defs.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Defs/obj/Debug/QCCTV-Defs.dll.mdb

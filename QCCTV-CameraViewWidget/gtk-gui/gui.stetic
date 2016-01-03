@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../../QCCTV-Defs/bin/Debug/QCCTV-Defs.dll" />
+    <widget-library name="../bin/Debug/QCCTV-CameraViewWidget.dll" internal="true" />
+  </import>
+  <widget class="Gtk.Bin" id="QCCTVCameraViewWidget.CameraView" design-size="377 200">
+    <action-group name="Default">
+      <action id="SourceAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Source</property>
+        <property name="ShortLabel" translatable="yes">Source</property>
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="mainBox">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.Fixed" id="fixbox">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">200</property>
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Image" id="output">
+                <property name="MemberName" />
+                <property name="Xalign">0</property>
+                <property name="Yalign">0</property>
+              </widget>
+              <packing>
+                <property name="X">-1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.VBox" id="setBox">
+                <property name="MemberName" />
+                <property name="WidthRequest">300</property>
+                <property name="HeightRequest">30</property>
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.HBox" id="bottombox">
+                    <property name="MemberName" />
+                    <property name="Spacing">6</property>
+                    <child>
+                      <widget class="Gtk.ProgressBar" id="activity">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">100</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">0</property>
+                        <property name="AutoSize">True</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.ProgressBar" id="sensitivity">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">100</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">1</property>
+                        <property name="AutoSize">True</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <placeholder />
+                    </child>
+                    <child>
+                      <widget class="Gtk.Label" id="fpslabel">
+                        <property name="MemberName" />
+                        <property name="LabelProp" translatable="yes">60</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">3</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Image" id="detect">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">15</property>
+                        <property name="HeightRequest">15</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">4</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Image" id="record">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">15</property>
+                        <property name="HeightRequest">15</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">5</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="X">2</property>
+                <property name="Y">126</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="statsBox">
+                <property name="MemberName" />
+                <property name="WidthRequest">300</property>
+                <property name="HeightRequest">30</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.EventBox" id="bgstats">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">300</property>
+                    <property name="HeightRequest">30</property>
+                    <child>
+                      <widget class="Gtk.HBox" id="hbox1">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">300</property>
+                        <property name="HeightRequest">20</property>
+                        <property name="Spacing">6</property>
+                        <child>
+                          <widget class="Gtk.Label" id="IPaddresLabel">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">0.0.0.0</property>
+                          </widget>
+                          <packing>
+                            <property name="Position">0</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="NameLabel">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">Name</property>
+                          </widget>
+                          <packing>
+                            <property name="Position">1</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="FpsLabel">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">0 FPS</property>
+                          </widget>
+                          <packing>
+                            <property name="Position">2</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed4">
+                <property name="MemberName" />
+                <property name="WidthRequest">300</property>
+                <property name="HeightRequest">30</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.EventBox" id="optionbox">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">500</property>
+                    <property name="HeightRequest">30</property>
+                    <child>
+                      <widget class="Gtk.VBox" id="vbox3">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">300</property>
+                        <property name="HeightRequest">30</property>
+                        <property name="Spacing">6</property>
+                        <child>
+                          <widget class="Gtk.HBox" id="topbox">
+                            <property name="MemberName" />
+                            <property name="Visible">False</property>
+                            <property name="Spacing">6</property>
+                            <child>
+                              <widget class="Gtk.ComboBox" id="source_box">
+                                <property name="MemberName" />
+                                <property name="WidthRequest">200</property>
+                                <property name="IsTextCombo">False</property>
+                                <property name="Items" translatable="yes" />
+                                <signal name="Changed" handler="OnSelectDeviceChanged" after="yes" />
+                              </widget>
+                              <packing>
+                                <property name="Position">0</property>
+                                <property name="AutoSize">True</property>
+                                <property name="Expand">False</property>
+                                <property name="Fill">False</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="Gtk.Button" id="MotionButton">
+                                <property name="MemberName" />
+                                <property name="CanFocus">True</property>
+                                <property name="Type">TextOnly</property>
+                                <property name="Label" translatable="yes">Motion</property>
+                                <property name="UseUnderline">True</property>
+                                <signal name="Clicked" handler="OnMotionButtonClicked" />
+                              </widget>
+                              <packing>
+                                <property name="Position">1</property>
+                                <property name="AutoSize">True</property>
+                                <property name="Expand">False</property>
+                                <property name="Fill">False</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="Gtk.Button" id="RecordButton">
+                                <property name="MemberName" />
+                                <property name="CanFocus">True</property>
+                                <property name="Type">TextOnly</property>
+                                <property name="Label" translatable="yes">Record</property>
+                                <property name="UseUnderline">True</property>
+                              </widget>
+                              <packing>
+                                <property name="Position">2</property>
+                                <property name="AutoSize">True</property>
+                                <property name="Expand">False</property>
+                                <property name="Fill">False</property>
+                              </packing>
+                            </child>
+                          </widget>
+                          <packing>
+                            <property name="Position">0</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Y">20</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="controls">
+                <property name="MemberName" />
+                <property name="WidthRequest">75</property>
+                <property name="HeightRequest">75</property>
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.EventBox" id="eventbox1">
+                    <property name="MemberName" />
+                    <child>
+                      <placeholder />
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="X">-34</property>
+                    <property name="Y">61</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="button4">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">30</property>
+                    <property name="HeightRequest">30</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-go-down Menu</property>
+                    <property name="Label" translatable="yes" />
+                    <property name="UseUnderline">True</property>
+                    <property name="Relief">None</property>
+                    <signal name="Clicked" handler="OnButton4Clicked" />
+                    <signal name="Released" handler="OnButton4Released" />
+                    <signal name="Pressed" handler="OnButton4Pressed" />
+                  </widget>
+                  <packing>
+                    <property name="X">24</property>
+                    <property name="Y">48</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="button3">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">30</property>
+                    <property name="HeightRequest">30</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-go-forward Menu</property>
+                    <property name="Label" translatable="yes" />
+                    <property name="UseUnderline">True</property>
+                    <property name="Relief">None</property>
+                    <signal name="Clicked" handler="OnButton3Clicked" />
+                    <signal name="Released" handler="OnButton3Released" />
+                    <signal name="Pressed" handler="OnButton3Pressed" />
+                  </widget>
+                  <packing>
+                    <property name="X">45</property>
+                    <property name="Y">25</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="button1">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">30</property>
+                    <property name="HeightRequest">30</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-go-back Menu</property>
+                    <property name="Label" translatable="yes" />
+                    <property name="UseUnderline">True</property>
+                    <property name="Relief">None</property>
+                    <property name="Yalign">0</property>
+                    <signal name="Clicked" handler="OnButton1Clicked" />
+                    <signal name="Released" handler="OnButton1Released" />
+                    <signal name="Pressed" handler="OnButton1Pressed" />
+                  </widget>
+                  <packing>
+                    <property name="Y">25</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="button2">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">30</property>
+                    <property name="HeightRequest">30</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-go-up Menu</property>
+                    <property name="Label" translatable="yes" />
+                    <property name="Relief">None</property>
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <signal name="Clicked" handler="OnButton2Clicked" />
+                    <signal name="Released" handler="OnButton2Released" />
+                    <signal name="Pressed" handler="OnButton2Pressed" />
+                  </widget>
+                  <packing>
+                    <property name="X">25</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="X">268</property>
+                <property name="Y">71</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

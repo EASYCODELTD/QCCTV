@@ -1,0 +1,10 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/CQCCTV-MJPG-Driver.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/CQCCTV-MJPG-Driver.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/obj/Debug/CQCCTV-MJPG-Driver.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/obj/Debug/CQCCTV-MJPG-Driver.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/AForge.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/AForge.Video.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/AForge.Video.FFMPEG.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/QCCTV-Defs.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/CQCCTV-MJPG-Driver/bin/Debug/QCCTV-Defs.dll.mdb

@@ -1,0 +1,7 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/bin/Debug/QCCTV-JPG-Driver.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/bin/Debug/QCCTV-JPG-Driver.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/obj/Debug/QCCTV-JPG-Driver.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/obj/Debug/QCCTV-JPG-Driver.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/bin/Debug/QCCTV-Defs.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-JPG-Driver/bin/Debug/QCCTV-Defs.dll.mdb
