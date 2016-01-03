@@ -4,6 +4,8 @@ CCTV Software for window and linux
 
 (Currently can't save video stream. Work in progress.)
 
+![GitHub Logo](https://github.com/rastabaddon/QCCTV/raw/master/Docs/Img/qcctv.png)
+
 #Requirements
   * Windows/Linux
   * Mono 
