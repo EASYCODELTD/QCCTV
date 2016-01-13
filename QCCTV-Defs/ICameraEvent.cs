@@ -4,7 +4,7 @@ using CQCCTV.Drivers;
 
 namespace QCCTVDefs
 {
-	public class ICameraEventArgs : EventArgs
+	public class ICameraEventArgs : System.EventArgs
 	{
 		public ICameraDriver driver=null;
 		
@@ -12,10 +12,10 @@ namespace QCCTVDefs
 	
 	public class ICameraNewFrameEventArgs : ICameraEventArgs
 	{
-		public ICameraNewFrameEventArgs (ICameraDriver driver, Gtk.Image frame)
+		public ICameraNewFrameEventArgs ( ICameraDriver driver,  byte[] frame)
 		{
 			this.driver = driver; this.frame = frame; }
-		public Gtk.Image frame=null;
+		public byte[] frame=null;
 	}
 	
 	

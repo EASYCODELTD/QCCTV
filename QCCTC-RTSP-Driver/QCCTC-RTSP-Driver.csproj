@@ -15,7 +15,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\Bin\Drivers</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\Bin\Drivers</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -40,171 +40,20 @@
     <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <Package>gtk-sharp-2.0</Package>
     </Reference>
-    <Reference Include="Media.Codec">
-      <HintPath>..\..\Packages\MediaBin\Media.Codec.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Aac">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Aac.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Ac3">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Ac3.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Alaw">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Alaw.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Flac">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Flac.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.G722">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.G722.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Mp3">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Mp3.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Mulaw">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Mulaw.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Audio.Vorbis">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Audio.Vorbis.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Image.Bmp">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Image.Bmp.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Image">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Image.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Image.Gif">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Image.Gif.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Image.Jpeg">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Image.Jpeg.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Image.Png">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Image.Png.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.H261">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.H261.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.H263">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.H263.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.H264">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.H264.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.H265">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.H265.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.Mpeg">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.Mpeg.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.Mpeg2">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.Mpeg2.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.Mpeg4">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.Mpeg4.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Codecs.Video.Thor">
-      <HintPath>..\..\Packages\MediaBin\Media.Codecs.Video.Thor.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Compression">
-      <HintPath>..\..\Packages\MediaBin\Media.Compression.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Container">
-      <HintPath>..\..\Packages\MediaBin\Media.Container.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Asf">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Asf.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.BaseMedia">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.BaseMedia.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Gxf">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Gxf.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Matroska">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Matroska.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Mcf">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Mcf.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Mpeg">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Mpeg.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Mxf">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Mxf.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Nut">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Nut.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Ogg">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Ogg.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Real">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Real.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Containers.Riff">
-      <HintPath>..\..\Packages\MediaBin\Media.Containers.Riff.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Cryptography">
-      <HintPath>..\..\Packages\MediaBin\Media.Cryptography.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Http">
-      <HintPath>..\..\Packages\MediaBin\Media.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Ntp">
-      <HintPath>..\..\Packages\MediaBin\Media.Ntp.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Rtcp.Feedback">
-      <HintPath>..\..\Packages\MediaBin\Media.Rtcp.Feedback.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Rtmp">
-      <HintPath>..\..\Packages\MediaBin\Media.Rtmp.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Rtp">
-      <HintPath>..\..\Packages\MediaBin\Media.Rtp.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.RtpTools">
-      <HintPath>..\..\Packages\MediaBin\Media.RtpTools.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Rtsp">
-      <HintPath>..\..\Packages\MediaBin\Media.Rtsp.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Sdp">
-      <HintPath>..\..\Packages\MediaBin\Media.Sdp.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Sip">
-      <HintPath>..\..\Packages\MediaBin\Media.Sip.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="Media.Common">
-      <HintPath>..\..\net7mma-111808\Sockets\bin\Debug\Media.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.Sockets">
-      <HintPath>..\..\net7mma-111808\Sockets\bin\Debug\Media.Sockets.dll</HintPath>
-    </Reference>
-    <Reference Include="Media.RtspServer">
-      <HintPath>..\..\net7mma-111808\RtspServer\bin\Debug\Media.RtspServer.dll</HintPath>
-    </Reference>
-    <Reference Include="NReco.VideoConverter">
-      <HintPath>..\TP\video_converter_1.0_free\NReco.VideoConverter.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RTSPDriver.cs" />
+    <Compile Include="export.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\QCCTV-Defs\QCCTV-Defs.csproj">
       <Project>{0A46E0BA-32A9-446B-9BB2-B973626D4AA1}</Project>
       <Name>QCCTV-Defs</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,8 +1,6 @@
 /mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
 /mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/obj/Debug/QCCTVCameraViewWidget.gtk-gui.gui.stetic
-/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/bin/Debug/QCCTV-CameraViewWidget.dll.mdb
-/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/bin/Debug/QCCTV-CameraViewWidget.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/Bin/QCCTV-CameraViewWidget.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/Bin/QCCTV-CameraViewWidget.dll
 /mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/obj/Debug/QCCTV-CameraViewWidget.dll
 /mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/obj/Debug/QCCTV-CameraViewWidget.dll.mdb
-/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/bin/Debug/QCCTV-Defs.dll
-/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-CameraViewWidget/bin/Debug/QCCTV-Defs.dll.mdb

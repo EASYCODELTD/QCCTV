@@ -5,6 +5,8 @@ using QCCTVCameraViewWidget;
 using CQCCTV.Drivers;
 using QCCTV;
 using QCCTVDefs;
+using System.IO;
+using System.Reflection;
 
 
 public partial class MainWindow: Gtk.Window
@@ -18,7 +20,10 @@ public partial class MainWindow: Gtk.Window
 	public List<IDevice> devices=null;
 	
 	public AppSettings settings = null;
-	
+
+	private string driversPath = "";
+	private string settingsPath = "";
+
 	public bool toolboxVisible { 
 		get{ return ViewTolboxAction.Active; }
 		set {
@@ -43,8 +48,14 @@ public partial class MainWindow: Gtk.Window
 	{
 		Build ();
 
-		offImage = Image.LoadFromResource ("QCCTV.Resources.Images.nosignal.png");
+		driversPath = Directory.GetCurrentDirectory()+"/Drivers";
+		settingsPath = Directory.GetCurrentDirectory()+"/Config";
 
+		try {
+			offImage = Image.LoadFromResource ("QCCTV.Resources.Images.nosignal.png");
+		} catch (Exception e ) {
+			
+		}
 		menubar.Visible = false;
 
 		DevicesSettings = new DevicesSettingsWindow (this);
@@ -54,6 +65,11 @@ public partial class MainWindow: Gtk.Window
 		
 		settings = null;
 		loadSettings ();
+
+		int width = 640;
+		int height = 480;
+
+	
 	}
 
 	
@@ -76,18 +92,48 @@ public partial class MainWindow: Gtk.Window
 		
 		drivers = new List<ICameraDriver> ();
 		drivers.Add (new CQCCTV.Drivers.EmptyDriver ());
-		drivers.Add (new CQCCTV.Drivers.MJPGDriver ());
-		drivers.Add (new CQCCTV.Drivers.JPGDriver ());
-		drivers.Add (new CQCCTV.Drivers.USBDriver ());
-		drivers.Add (new CQCCTV.Drivers.RTSPDriver ());
 
 
-		drivers.Add (new CQCCTV.Drivers.IPROBOT3JPGDriver ());
-		drivers.Add (new CQCCTV.Drivers.IP602WDriver ());
-	
+		if (Directory.Exists (driversPath)) {
+			System.IO.DirectoryInfo di = new DirectoryInfo (driversPath);
+
+			foreach (FileInfo file in di.GetFiles()) {
+				if (file.Extension == ".dll") {
+
+					try {
+						
+						Assembly driverAssembly = Assembly.LoadFile (file.ToString ());
+			
+						CQCCTV.Drivers.IExportDriver driverExporter = driverAssembly.CreateInstance("CQCCTV.Drivers.Export") as CQCCTV.Drivers.IExportDriver;
+						if (driverExporter != null) {
+
+							List<ICameraDriver> driverList = driverExporter
+								.GetType() //Get the type of MyDLLForm
+								.GetMethod("Init") //Gets a System.Reflection.MethodInfo 
+								//object representing SomeMethod
+								.Invoke(driverExporter, null) as List<ICameraDriver>;
+
+							if(driverList!=null)
+							{
+								foreach (ICameraDriver driver in driverList) {
+									drivers.Add(driver);
+								}
+							}
+							Console.WriteLine ("Loaded: "+file.Name+" "+driverList.GetType());
+						} else {
+							Console.Error.WriteLine ("Error load driver: " + file.Name);
+						}
+					} catch(Exception ex) {
+						Console.Error.WriteLine ("Error load driver: " + file.Name+","+ex.Message);
+					}
+				} 
+			}
+		}
+
+
 	}
 	
-	
+
 	/**
 	 * 
 	 */
@@ -163,7 +209,7 @@ public partial class MainWindow: Gtk.Window
 	
 	public void loadSettings ()
 	{
-		settings = AppSettings.LoadFromFile ("settings.xml");
+		settings = AppSettings.LoadFromFile (settingsPath+"/settings.xml");
 		toolboxVisible = settings.toolboxVisible;
 		
 		devices.Clear ();
@@ -181,7 +227,7 @@ public partial class MainWindow: Gtk.Window
 			device.driver.Login = devsettings.DeviceLogin;
 			device.driver.Password = devsettings.DevicePassword;
 			devices.Add (device);
-			device.driver.Connect ();
+			device.Connect ();
 			
 		}
 
@@ -258,7 +304,7 @@ public partial class MainWindow: Gtk.Window
 		
 	
 		
-		settings.SaveToFile ("settings.xml");
+		settings.SaveToFile (settingsPath+"/settings.xml");
 	}
 	
 	

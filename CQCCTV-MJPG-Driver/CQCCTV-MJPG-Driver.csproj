@@ -15,7 +15,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\Bin\Drivers</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\Bin\Drivers</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -36,15 +36,6 @@
     </Reference>
     <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <Package>gtk-sharp-2.0</Package>
-    </Reference>
-    <Reference Include="AForge">
-      <HintPath>..\..\AForge.NET Framework-2.2.5-%28libs only%29\Release\AForge.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Video">
-      <HintPath>..\..\AForge.NET Framework-2.2.5-%28libs only%29\Release\AForge.Video.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Video.FFMPEG">
-      <HintPath>..\..\AForge.NET Framework-2.2.5-%28libs only%29\Release\AForge.Video.FFMPEG.dll</HintPath>
     </Reference>
     <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <Package>glib-sharp-2.0</Package>
@@ -58,12 +49,14 @@
     <Compile Include="MJPGDriver.cs" />
     <Compile Include="ByteArrayUtils.cs" />
     <Compile Include="IP602WDriver.cs" />
+    <Compile Include="export.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\QCCTV-Defs\QCCTV-Defs.csproj">
       <Project>{0A46E0BA-32A9-446B-9BB2-B973626D4AA1}</Project>
       <Name>QCCTV-Defs</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
 </Project>

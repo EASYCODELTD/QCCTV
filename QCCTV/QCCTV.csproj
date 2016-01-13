@@ -15,7 +15,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\Bin</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\Bin</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
@@ -33,7 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Mono.Posix" />
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <Package>gtk-sharp-2.0</Package>
     </Reference>
@@ -51,6 +50,9 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="Mono.Posix">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -78,13 +80,11 @@
     <Compile Include="AppSettings.cs" />
     <Compile Include="ViewSetting.cs" />
     <Compile Include="DeviceSetting.cs" />
+    <Compile Include="Platform\windows.cs" />
+    <Compile Include="Platform\linux.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\CQCCTV-MJPG-Driver\CQCCTV-MJPG-Driver.csproj">
-      <Project>{B57E27BA-2B85-46DF-AA45-F68C3EDBA5E5}</Project>
-      <Name>CQCCTV-MJPG-Driver</Name>
-    </ProjectReference>
     <ProjectReference Include="..\QCCTV-Defs\QCCTV-Defs.csproj">
       <Project>{0A46E0BA-32A9-446B-9BB2-B973626D4AA1}</Project>
       <Name>QCCTV-Defs</Name>
@@ -93,20 +93,17 @@
       <Project>{5D9B2072-3840-4A85-A202-336F41D667C8}</Project>
       <Name>QCCTV-CameraViewWidget</Name>
     </ProjectReference>
-    <ProjectReference Include="..\QCCTV-JPG-Driver\QCCTV-JPG-Driver.csproj">
-      <Project>{A49FDF9C-1B05-4672-B7CF-36CB6B46112C}</Project>
-      <Name>QCCTV-JPG-Driver</Name>
+    <ProjectReference Include="..\QCCTV-Recorder\QCCTV-Recorder.csproj">
+      <Project>{1B169B61-7E54-4B69-910C-39B2B169071D}</Project>
+      <Name>QCCTV-Recorder</Name>
     </ProjectReference>
-    <ProjectReference Include="..\QCCTV-USB-Driver\QCCTV-USB-Driver.csproj">
-      <Project>{80897598-BC77-48E2-AF19-8093F68A28B2}</Project>
-      <Name>QCCTV-USB-Driver</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\QCCTC-RTSP-Driver\QCCTC-RTSP-Driver.csproj">
-      <Project>{8CAFCA85-E98C-4CED-A8C8-A6279D907EDB}</Project>
-      <Name>QCCTC-RTSP-Driver</Name>
+    <ProjectReference Include="..\QFFMPEG\QFFMPEG.csproj">
+      <Project>{7DFD0F74-331B-49E3-A247-93523F25857E}</Project>
+      <Name>QFFMPEG</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Platform\" />
   </ItemGroup>
 </Project>

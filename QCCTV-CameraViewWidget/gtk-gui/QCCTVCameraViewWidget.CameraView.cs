@@ -34,11 +34,19 @@ namespace QCCTVCameraViewWidget
 		
 		private global::Gtk.HBox hbox1;
 		
+		private global::Gtk.Fixed fixed1;
+		
 		private global::Gtk.Label IPaddresLabel;
 		
 		private global::Gtk.Label NameLabel;
 		
 		private global::Gtk.Label FpsLabel;
+		
+		private global::Gtk.Fixed fixed3;
+		
+		private global::Gtk.Fixed fixed2;
+		
+		private global::Gtk.Label DriverLabel;
 		
 		private global::Gtk.Fixed fixed4;
 		
@@ -176,32 +184,68 @@ namespace QCCTVCameraViewWidget
 			this.hbox1.Name = "hbox1";
 			this.hbox1.Spacing = 6;
 			// Container child hbox1.Gtk.Box+BoxChild
+			this.fixed1 = new global::Gtk.Fixed ();
+			this.fixed1.WidthRequest = 10;
+			this.fixed1.HeightRequest = 10;
+			this.fixed1.Name = "fixed1";
+			this.fixed1.HasWindow = false;
+			this.hbox1.Add (this.fixed1);
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.fixed1]));
+			w11.Position = 0;
+			// Container child hbox1.Gtk.Box+BoxChild
 			this.IPaddresLabel = new global::Gtk.Label ();
 			this.IPaddresLabel.Name = "IPaddresLabel";
 			this.IPaddresLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("0.0.0.0");
 			this.hbox1.Add (this.IPaddresLabel);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.IPaddresLabel]));
-			w11.Position = 0;
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.IPaddresLabel]));
+			w12.Position = 1;
+			w12.Expand = false;
+			w12.Fill = false;
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.NameLabel = new global::Gtk.Label ();
 			this.NameLabel.Name = "NameLabel";
 			this.NameLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("Name");
 			this.hbox1.Add (this.NameLabel);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.NameLabel]));
-			w12.Position = 1;
-			w12.Expand = false;
-			w12.Fill = false;
+			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.NameLabel]));
+			w13.Position = 2;
+			w13.Expand = false;
+			w13.Fill = false;
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.FpsLabel = new global::Gtk.Label ();
 			this.FpsLabel.Name = "FpsLabel";
 			this.FpsLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("0 FPS");
 			this.hbox1.Add (this.FpsLabel);
-			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.FpsLabel]));
-			w13.Position = 2;
-			w13.Expand = false;
-			w13.Fill = false;
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.FpsLabel]));
+			w14.Position = 3;
+			w14.Expand = false;
+			w14.Fill = false;
+			// Container child hbox1.Gtk.Box+BoxChild
+			this.fixed3 = new global::Gtk.Fixed ();
+			this.fixed3.Name = "fixed3";
+			this.fixed3.HasWindow = false;
+			this.hbox1.Add (this.fixed3);
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.fixed3]));
+			w15.Position = 4;
+			// Container child hbox1.Gtk.Box+BoxChild
+			this.fixed2 = new global::Gtk.Fixed ();
+			this.fixed2.WidthRequest = 10;
+			this.fixed2.HeightRequest = 10;
+			this.fixed2.Name = "fixed2";
+			this.fixed2.HasWindow = false;
+			this.hbox1.Add (this.fixed2);
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.fixed2]));
+			w16.PackType = ((global::Gtk.PackType)(1));
+			w16.Position = 5;
+			// Container child hbox1.Gtk.Box+BoxChild
+			this.DriverLabel = new global::Gtk.Label ();
+			this.DriverLabel.Name = "DriverLabel";
+			this.DriverLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("n/a");
+			this.hbox1.Add (this.DriverLabel);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.DriverLabel]));
+			w17.PackType = ((global::Gtk.PackType)(1));
+			w17.Position = 6;
+			w17.Expand = false;
+			w17.Fill = false;
 			this.bgstats.Add (this.hbox1);
 			this.statsBox.Add (this.bgstats);
 			this.fixbox.Add (this.statsBox);
@@ -231,10 +275,10 @@ namespace QCCTVCameraViewWidget
 			this.source_box.WidthRequest = 200;
 			this.source_box.Name = "source_box";
 			this.topbox.Add (this.source_box);
-			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.topbox [this.source_box]));
-			w17.Position = 0;
-			w17.Expand = false;
-			w17.Fill = false;
+			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.topbox [this.source_box]));
+			w21.Position = 0;
+			w21.Expand = false;
+			w21.Fill = false;
 			// Container child topbox.Gtk.Box+BoxChild
 			this.MotionButton = new global::Gtk.Button ();
 			this.MotionButton.CanFocus = true;
@@ -242,10 +286,10 @@ namespace QCCTVCameraViewWidget
 			this.MotionButton.UseUnderline = true;
 			this.MotionButton.Label = global::Mono.Unix.Catalog.GetString ("Motion");
 			this.topbox.Add (this.MotionButton);
-			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.topbox [this.MotionButton]));
-			w18.Position = 1;
-			w18.Expand = false;
-			w18.Fill = false;
+			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.topbox [this.MotionButton]));
+			w22.Position = 1;
+			w22.Expand = false;
+			w22.Fill = false;
 			// Container child topbox.Gtk.Box+BoxChild
 			this.RecordButton = new global::Gtk.Button ();
 			this.RecordButton.CanFocus = true;
@@ -253,20 +297,20 @@ namespace QCCTVCameraViewWidget
 			this.RecordButton.UseUnderline = true;
 			this.RecordButton.Label = global::Mono.Unix.Catalog.GetString ("Record");
 			this.topbox.Add (this.RecordButton);
-			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.topbox [this.RecordButton]));
-			w19.Position = 2;
-			w19.Expand = false;
-			w19.Fill = false;
+			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.topbox [this.RecordButton]));
+			w23.Position = 2;
+			w23.Expand = false;
+			w23.Fill = false;
 			this.vbox3.Add (this.topbox);
-			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.topbox]));
-			w20.Position = 0;
-			w20.Expand = false;
-			w20.Fill = false;
+			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.topbox]));
+			w24.Position = 0;
+			w24.Expand = false;
+			w24.Fill = false;
 			this.optionbox.Add (this.vbox3);
 			this.fixed4.Add (this.optionbox);
 			this.fixbox.Add (this.fixed4);
-			global::Gtk.Fixed.FixedChild w23 = ((global::Gtk.Fixed.FixedChild)(this.fixbox [this.fixed4]));
-			w23.Y = 20;
+			global::Gtk.Fixed.FixedChild w27 = ((global::Gtk.Fixed.FixedChild)(this.fixbox [this.fixed4]));
+			w27.Y = 20;
 			// Container child fixbox.Gtk.Fixed+FixedChild
 			this.controls = new global::Gtk.Fixed ();
 			this.controls.WidthRequest = 75;
@@ -277,9 +321,9 @@ namespace QCCTVCameraViewWidget
 			this.eventbox1 = new global::Gtk.EventBox ();
 			this.eventbox1.Name = "eventbox1";
 			this.controls.Add (this.eventbox1);
-			global::Gtk.Fixed.FixedChild w24 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.eventbox1]));
-			w24.X = -34;
-			w24.Y = 61;
+			global::Gtk.Fixed.FixedChild w28 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.eventbox1]));
+			w28.X = -34;
+			w28.Y = 61;
 			// Container child controls.Gtk.Fixed+FixedChild
 			this.button4 = new global::Gtk.Button ();
 			this.button4.WidthRequest = 30;
@@ -288,13 +332,13 @@ namespace QCCTVCameraViewWidget
 			this.button4.Name = "button4";
 			this.button4.UseUnderline = true;
 			this.button4.Relief = ((global::Gtk.ReliefStyle)(2));
-			global::Gtk.Image w25 = new global::Gtk.Image ();
-			w25.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-down", global::Gtk.IconSize.Menu);
-			this.button4.Image = w25;
+			global::Gtk.Image w29 = new global::Gtk.Image ();
+			w29.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-down", global::Gtk.IconSize.Menu);
+			this.button4.Image = w29;
 			this.controls.Add (this.button4);
-			global::Gtk.Fixed.FixedChild w26 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button4]));
-			w26.X = 24;
-			w26.Y = 48;
+			global::Gtk.Fixed.FixedChild w30 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button4]));
+			w30.X = 24;
+			w30.Y = 48;
 			// Container child controls.Gtk.Fixed+FixedChild
 			this.button3 = new global::Gtk.Button ();
 			this.button3.WidthRequest = 30;
@@ -303,13 +347,13 @@ namespace QCCTVCameraViewWidget
 			this.button3.Name = "button3";
 			this.button3.UseUnderline = true;
 			this.button3.Relief = ((global::Gtk.ReliefStyle)(2));
-			global::Gtk.Image w27 = new global::Gtk.Image ();
-			w27.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-forward", global::Gtk.IconSize.Menu);
-			this.button3.Image = w27;
+			global::Gtk.Image w31 = new global::Gtk.Image ();
+			w31.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-forward", global::Gtk.IconSize.Menu);
+			this.button3.Image = w31;
 			this.controls.Add (this.button3);
-			global::Gtk.Fixed.FixedChild w28 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button3]));
-			w28.X = 45;
-			w28.Y = 25;
+			global::Gtk.Fixed.FixedChild w32 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button3]));
+			w32.X = 45;
+			w32.Y = 25;
 			// Container child controls.Gtk.Fixed+FixedChild
 			this.button1 = new global::Gtk.Button ();
 			this.button1.WidthRequest = 30;
@@ -319,12 +363,12 @@ namespace QCCTVCameraViewWidget
 			this.button1.UseUnderline = true;
 			this.button1.Relief = ((global::Gtk.ReliefStyle)(2));
 			this.button1.Yalign = 0F;
-			global::Gtk.Image w29 = new global::Gtk.Image ();
-			w29.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-back", global::Gtk.IconSize.Menu);
-			this.button1.Image = w29;
+			global::Gtk.Image w33 = new global::Gtk.Image ();
+			w33.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-back", global::Gtk.IconSize.Menu);
+			this.button1.Image = w33;
 			this.controls.Add (this.button1);
-			global::Gtk.Fixed.FixedChild w30 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button1]));
-			w30.Y = 25;
+			global::Gtk.Fixed.FixedChild w34 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button1]));
+			w34.Y = 25;
 			// Container child controls.Gtk.Fixed+FixedChild
 			this.button2 = new global::Gtk.Button ();
 			this.button2.WidthRequest = 30;
@@ -334,19 +378,19 @@ namespace QCCTVCameraViewWidget
 			this.button2.Relief = ((global::Gtk.ReliefStyle)(2));
 			this.button2.Xalign = 0F;
 			this.button2.Yalign = 0F;
-			global::Gtk.Image w31 = new global::Gtk.Image ();
-			w31.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-up", global::Gtk.IconSize.Menu);
-			this.button2.Image = w31;
+			global::Gtk.Image w35 = new global::Gtk.Image ();
+			w35.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-go-up", global::Gtk.IconSize.Menu);
+			this.button2.Image = w35;
 			this.controls.Add (this.button2);
-			global::Gtk.Fixed.FixedChild w32 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button2]));
-			w32.X = 25;
+			global::Gtk.Fixed.FixedChild w36 = ((global::Gtk.Fixed.FixedChild)(this.controls [this.button2]));
+			w36.X = 25;
 			this.fixbox.Add (this.controls);
-			global::Gtk.Fixed.FixedChild w33 = ((global::Gtk.Fixed.FixedChild)(this.fixbox [this.controls]));
-			w33.X = 268;
-			w33.Y = 71;
+			global::Gtk.Fixed.FixedChild w37 = ((global::Gtk.Fixed.FixedChild)(this.fixbox [this.controls]));
+			w37.X = 268;
+			w37.Y = 71;
 			this.mainBox.Add (this.fixbox);
-			global::Gtk.Box.BoxChild w34 = ((global::Gtk.Box.BoxChild)(this.mainBox [this.fixbox]));
-			w34.Position = 0;
+			global::Gtk.Box.BoxChild w38 = ((global::Gtk.Box.BoxChild)(this.mainBox [this.fixbox]));
+			w38.Position = 0;
 			this.Add (this.mainBox);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();

@@ -14,12 +14,14 @@ CCTV Software for window and linux
 #Freatures
   * Connecting to IP Camera
   * PTZ
+  * Adaptive FPS (simple)
   
 #Drivers
   * MJPG Driver
-  * IP602W Driver
   * JPG Driver
+  * IP602W Driver
   * IPROBOT3 Driver
+  * JPT3815W Driver
   
 #Tested with
   * Tenvis IPROBOT 3

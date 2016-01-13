@@ -1,0 +1,5 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Recorder/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/Bin/QCCTV-Recorder.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/Bin/QCCTV-Recorder.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Recorder/obj/Debug/QCCTV-Recorder.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/QCCTV-Recorder/obj/Debug/QCCTV-Recorder.dll.mdb

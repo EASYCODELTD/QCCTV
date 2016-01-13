@@ -50,7 +50,7 @@ namespace QCCTVCameraViewWidget
 			bgColor = new Gdk.Color();
 
 			Gdk.Color.Parse("white", ref textColor);
-			Gdk.Color.Parse("#20202005", ref bgColor);
+			Gdk.Color.Parse("black", ref bgColor);
 
 			bgstats.ModifyBg (StateType.Normal,bgColor);
 			bgstats.ModifyBase(StateType.Normal,bgColor);
@@ -58,6 +58,10 @@ namespace QCCTVCameraViewWidget
 			IPaddresLabel.ModifyBase(StateType.Normal,bgColor);
 			IPaddresLabel.ModifyBg(StateType.Normal,bgColor);
 			IPaddresLabel.ModifyFg (StateType.Normal,textColor);
+
+			NameLabel.ModifyFg (StateType.Normal,textColor);
+			FpsLabel.ModifyFg (StateType.Normal,textColor);
+			DriverLabel.ModifyFg (StateType.Normal,textColor);
 
 			timer = new Stopwatch ();
 			timer.Start ();
@@ -212,9 +216,16 @@ namespace QCCTVCameraViewWidget
 		
 		public void NewFrameEventHandler (object sender, ICameraNewFrameEventArgs e)
 		{
-			if (e.frame != null && e.frame.Pixbuf != null) {
-				
-				buffer = e.frame.Pixbuf;
+	
+
+			if (e.frame != null && e.frame.Length > 0) {
+
+				if (buffer != null) {
+					buffer.Dispose ();
+					buffer = null;
+				}
+
+				buffer = new Gdk.Pixbuf(e.frame);
 
 			
 				long inmicroseconds = timer.ElapsedTicks / (Stopwatch.Frequency / (1000L * 1000L));
@@ -274,6 +285,10 @@ namespace QCCTVCameraViewWidget
 				IPaddresLabel.Text = "Address: "+ip;
 				NameLabel.Text = "Name: "+currentDevice.getDeviceName ();
 				FpsLabel.Text = "Fps: 0";
+				if(currentDevice.driver!=null)
+				{
+					DriverLabel.Text = currentDevice.driver.getDriverName ();
+				}
 			}
 			
 			

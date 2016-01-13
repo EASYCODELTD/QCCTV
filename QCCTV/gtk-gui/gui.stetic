@@ -6,13 +6,11 @@
   </configuration>
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <widget-library name="../../CQCCTV-MJPG-Driver/bin/Debug/CQCCTV-MJPG-Driver.dll" />
     <widget-library name="../../QCCTV-Defs/bin/Debug/QCCTV-Defs.dll" />
     <widget-library name="../../QCCTV-CameraViewWidget/bin/Debug/QCCTV-CameraViewWidget.dll" />
-    <widget-library name="../../QCCTV-JPG-Driver/bin/Debug/QCCTV-JPG-Driver.dll" />
-    <widget-library name="../../QCCTV-USB-Driver/bin/Debug/QCCTV-USB-Driver.dll" />
-    <widget-library name="../../QCCTC-RTSP-Driver/bin/Debug/QCCTC-RTSP-Driver.dll" />
-    <widget-library name="../bin/Debug/QCCTV.exe" internal="true" />
+    <widget-library name="../../QCCTV-Recorder/bin/Debug/QCCTV-Recorder.dll" />
+    <widget-library name="../../QFFMPEG/bin/Debug/QFFMPEG.dll" />
+    <widget-library name="../../Bin/QCCTV.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="1024 768">
     <action-group name="Default">

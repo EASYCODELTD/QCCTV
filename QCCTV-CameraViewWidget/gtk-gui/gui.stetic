@@ -141,12 +141,24 @@
                         <property name="HeightRequest">20</property>
                         <property name="Spacing">6</property>
                         <child>
+                          <widget class="Gtk.Fixed" id="fixed1">
+                            <property name="MemberName" />
+                            <property name="WidthRequest">10</property>
+                            <property name="HeightRequest">10</property>
+                            <property name="HasWindow">False</property>
+                          </widget>
+                          <packing>
+                            <property name="Position">0</property>
+                            <property name="AutoSize">True</property>
+                          </packing>
+                        </child>
+                        <child>
                           <widget class="Gtk.Label" id="IPaddresLabel">
                             <property name="MemberName" />
                             <property name="LabelProp" translatable="yes">0.0.0.0</property>
                           </widget>
                           <packing>
-                            <property name="Position">0</property>
+                            <property name="Position">1</property>
                             <property name="AutoSize">True</property>
                             <property name="Expand">False</property>
                             <property name="Fill">False</property>
@@ -158,7 +170,7 @@
                             <property name="LabelProp" translatable="yes">Name</property>
                           </widget>
                           <packing>
-                            <property name="Position">1</property>
+                            <property name="Position">2</property>
                             <property name="AutoSize">True</property>
                             <property name="Expand">False</property>
                             <property name="Fill">False</property>
@@ -170,7 +182,43 @@
                             <property name="LabelProp" translatable="yes">0 FPS</property>
                           </widget>
                           <packing>
-                            <property name="Position">2</property>
+                            <property name="Position">3</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Fixed" id="fixed3">
+                            <property name="MemberName" />
+                            <property name="HasWindow">False</property>
+                          </widget>
+                          <packing>
+                            <property name="Position">4</property>
+                            <property name="AutoSize">True</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Fixed" id="fixed2">
+                            <property name="MemberName" />
+                            <property name="WidthRequest">10</property>
+                            <property name="HeightRequest">10</property>
+                            <property name="HasWindow">False</property>
+                          </widget>
+                          <packing>
+                            <property name="PackType">End</property>
+                            <property name="Position">5</property>
+                            <property name="AutoSize">True</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="DriverLabel">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">n/a</property>
+                          </widget>
+                          <packing>
+                            <property name="PackType">End</property>
+                            <property name="Position">6</property>
                             <property name="AutoSize">True</property>
                             <property name="Expand">False</property>
                             <property name="Fill">False</property>

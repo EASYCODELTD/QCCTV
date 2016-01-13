@@ -1,12 +1,15 @@
 ﻿<Properties StartupItem="QCCTV/QCCTV.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="QCCTV-CameraViewWidget/CameraView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QCCTV-JPG-Driver/JPGDriver.cs">
     <Files>
-      <File FileName="QCCTV-CameraViewWidget/CameraView.cs" Line="27" Column="30" />
+      <File FileName="QCCTV-JPG-Driver/JPGDriver.cs" Line="160" Column="44" />
+      <File FileName="QCCTV/CDevice.cs" Line="109" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <FunctionBreakpoint line="111" column="1" function="g_source_remove" language="C#" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -24,7 +24,7 @@ namespace CQCCTV
 			
 			public MJPGDriver ()
 			{
-				DriverName = "MJPG Camera Driver";
+				DriverName = "MJPG Camera";
 				isNetworkCamera = true;
 				isLoginReqired = true;
 				isPasswordRequired = true;
@@ -244,17 +244,13 @@ namespace CQCCTV
 									pos = stop;
 									todo = total - pos;
 	
-							
+
+									var ms = new MemoryStream (buffer, start, stop - start);
 									
-									
-									
-									// notify client
-									Gtk.Image frame = new Gtk.Image ();
-									frame.Pixbuf = new Gdk.Pixbuf (new MemoryStream (buffer, start, stop - start));
-										
-									
-										device.frameReady (frame);
-									
+									if(ms.Length>0)
+									{
+										device.frameReady (ms.ToArray());
+									}
 						
 									
 									
