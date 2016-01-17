@@ -1,0 +1,8 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/obj/x86/Debug/RTSPTest.gtk-gui.gui.stetic
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/bin/Debug/RTSPTest.exe.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/bin/Debug/RTSPTest.exe
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/obj/x86/Debug/RTSPTest.exe
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/obj/x86/Debug/RTSPTest.exe.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/bin/Debug/RTSP.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSPTest/bin/Debug/RTSP.dll.mdb

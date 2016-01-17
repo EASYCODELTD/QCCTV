@@ -1,0 +1,5 @@
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSP/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSP/bin/Debug/RTSP.dll.mdb
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSP/bin/Debug/RTSP.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSP/obj/Debug/RTSP.dll
+/mnt/oldos/home/rast/workspace/Mono/QCCTV/RTSP/obj/Debug/RTSP.dll.mdb
