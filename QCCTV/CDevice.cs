@@ -1,5 +1,6 @@
 using System;
 using QCCTVDefs;
+using System.Collections.Generic;
 
 
 namespace QCCTV
@@ -10,21 +11,28 @@ namespace QCCTV
 		public override event ConnectEventHandler ConnectEvent=null;
 		public override event DisconnectEventHandler DisconnectEvent=null;
 
+		private bool bRecord;
+		private int storeTime;
+
+		private Queue<byte[]> framesBuffer;
+
 		public CDevice ()
 		{
 			this.AddLog ("Device created");
 			process = false;
-
+			bRecord = false;
+			storeTime = 5;
+			framesBuffer = new Queue<byte[]>();
 		}
 		
 		public override void startRecording ()
 		{
-
+			bRecord = true;
 		}
 
 		public override void stopRecording ()
 		{
-
+			bRecord = false;
 		}
 
 		public override string getDeviceName () { return DeviceName; }
@@ -96,6 +104,14 @@ namespace QCCTV
 			Console.WriteLine ("got");
 		}
 
+		private void motionTest()
+		{
+			lock (framesBuffer) {
+
+
+			}
+		}
+
 		public override void frameReady (byte[] frame)
 		{
 			
@@ -109,6 +125,17 @@ namespace QCCTV
 
 				if(NewFrameEvent!=null && driver != null && frame != null )
 				{
+					lock(framesBuffer)
+					{
+						framesBuffer.Enqueue(frame);
+
+						while(framesBuffer.Count>(driver.serveFPS*storeTime))
+						{
+							framesBuffer.Dequeue();
+						}
+
+					}
+
 					NewFrameEvent(this,new ICameraNewFrameEventArgs(driver,frame));
 				}
 				process = false;

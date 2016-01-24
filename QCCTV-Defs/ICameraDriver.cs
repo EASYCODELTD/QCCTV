@@ -24,7 +24,8 @@ namespace CQCCTV
 			public bool isPasswordRequired = false;
 			public bool isLoginReqired = false;
 			public bool isAutoDiscover = false;
-			
+			public int serveFPS=24;
+
 			 object ICloneable.Clone()
 		    {
 		        return this.Clone();
@@ -32,6 +33,7 @@ namespace CQCCTV
 			
 		    public ICameraDriver Clone ()
 			{
+				
 				return (ICameraDriver)this.MemberwiseClone();
 		    }
 			
