@@ -68,7 +68,7 @@ namespace CQCCTV
 				
 			return false; }
 			
-						public override void Connect ()
+			public override void Connect ()
 			{
 				if (dontRun)
 					return;
@@ -83,6 +83,7 @@ namespace CQCCTV
 				
 				connect = true;
 			}
+
 			public override void Disconnect ()
 			{ 
 				device.AddLog ("Camera disconnect: " + device.getDeviceName () + " to " + URI);

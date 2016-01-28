@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="QCCTV/QCCTV.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="QCCTV/CDevice.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QCCTV-JPG-Driver/JPGDriver.cs">
     <Files>
-      <File FileName="QCCTV/CDevice.cs" Line="111" Column="5" />
-      <File FileName="QCCTV-Defs/ICameraDriver.cs" Line="1" Column="1" />
+      <File FileName="QCCTV-JPG-Driver/JPGDriver.cs" Line="310" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
