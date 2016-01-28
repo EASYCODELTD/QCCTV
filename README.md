@@ -11,7 +11,7 @@ CCTV Software for window and linux
   * Mono 
   * IP Camera
 
-#Fookeatures
+#Features
   * Connecting to IP Camera
   * PTZ
   * Adaptive FPS (simple)
